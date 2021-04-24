@@ -58,7 +58,7 @@
     }
 
     async function get_country_geoJSON() {
-        const countries = await d3.csv("countries.csv");
+        const countries = await d3.csv("Countries.CSV");
         const topology = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
         const GeoJSONObject = topojson.feature(topology, topology.objects.countries);
         for (let i = 0; i < GeoJSONObject.features.length; i++) {
