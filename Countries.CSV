@@ -1,0 +1,230 @@
+country,country_code,numeric_country_code
+Kosovo,XK,#N/A
+Namibia,,#N/A
+Puerto Rico,,#N/A
+South Sudan,,#N/A
+Brunei,BN,096
+British Virgin Islands,VG,092
+Solomon Islands,SB,090
+Belize,BZ,084
+Brazil,BR,076
+Botswana,BW,072
+Bosnia and Herzegovina,BA,070
+Bolivia,BO,068
+Bhutan,BT,064
+Bermuda,BM,060
+Belgium,BE,056
+Barbados,BB,052
+Armenia,AM,051
+Bangladesh,BD,050
+Bahrain,BH,048
+Bahamas,BS,044
+Austria,AT,040
+Australia,AU,036
+Argentina,AR,032
+Azerbaijan,AZ,031
+Antigua and Barbuda,AG,028
+Angola,AO,024
+Andorra,AD,020
+American Samoa,AS,016
+Algeria,DZ,012
+Antarctica,AQ,010
+Albania,AL,008
+Afghanistan,AF,004
+Zambia,ZM,894
+Yemen,YE,887
+Samoa,WS,882
+Venezuela,VE,862
+Uzbekistan,UZ,860
+Uruguay,UY,858
+Burkina Faso,BF,854
+"Virgin Islands, U.S.",VI,850
+United States,US,840
+Tanzania,TZ,834
+Isle of Man,IM,833
+Jersey,JE,832
+Guernsey,GG,831
+United Kingdom,GB,826
+Egypt,EG,818
+Former Yugoslav Republic of Macedonia,MK,807
+Ukraine,UA,804
+Uganda,UG,800
+Turks and Caicos Islands,TC,796
+Turkmenistan,TM,795
+Turkey,TR,792
+Tunisia,TN,788
+United Arab Emirates,AE,784
+Trinidad and Tobago,TT,780
+Tonga,TO,776
+Togo,TG,768
+Thailand,TH,764
+Tajikistan,TJ,762
+Syria,SY,760
+Switzerland,CH,756
+Sweden,SE,752
+Swaziland,SZ,748
+Suriname,SR,740
+Sudan,SD,729
+Spain,ES,724
+Zimbabwe,ZW,716
+South Africa,ZA,710
+Somalia,SO,706
+Republic of Slovenia,SI,705
+Vietnam,VN,704
+Slovak Republic,SK,703
+Singapore,SG,702
+Sierra Leone,SL,694
+Seychelles,SC,690
+Republic of Serbia,RS,688
+Senegal,SN,686
+Kingdom of Saudi Arabia,SA,682
+San Marino,SM,674
+Saint Vincent and the Grenadines,VC,670
+Saint Pierre and Miquelon,PM,666
+Saint Martin,MF,663
+Saint Lucia,LC,662
+Saint Kitts and Nevis,KN,659
+Saint Barthélemy,BL,652
+Rwanda,RW,646
+Russia,RU,643
+Romania,RO,642
+La Réunion,RE,638
+Qatar,QA,634
+United States,PR,630
+East Timor,TL,626
+Guinea Bissau,GW,624
+Portugal,PT,620
+Poland,PL,616
+Pitcairn Islands,PN,612
+Republic of the Philippines,PH,608
+Peru,PE,604
+Paraguay,PY,600
+Papua New Guinea,PG,598
+Panama,PA,591
+Pakistan,PK,586
+Palau,PW,585
+Marshall Islands,MH,584
+United States Minor Outlying Islands,UM,581
+Northern Mariana Islands,MP,580
+Norway,NO,578
+Nigeria,NG,566
+Niger,NE,562
+Nicaragua,NI,558
+New Zealand,NZ,554
+Vanuatu,VU,548
+New Caledonia,NC,540
+"Bonaire, Sint Eustatius and Saba",BQ,535
+Sint Maarten,SX,534
+Aruba,AW,533
+Curaçao,CW,531
+The Netherlands,NL,528
+Nepal,NP,524
+Namibia,NA,516
+Oman,OM,512
+Republic of Mozambique,MZ,508
+Morocco,MA,504
+Montenegro,ME,499
+Moldova,MD,498
+Mongolia,MN,496
+Monaco,MC,492
+Mexico,MX,484
+Republic of Mauritius,MU,480
+Mauritania,MR,478
+Martinique,MQ,474
+Malta,MT,470
+Mali,ML,466
+Maldives,MV,462
+Malaysia,MY,458
+Malawi,MW,454
+Madagascar,MG,450
+Macau,MO,446
+Luxembourg,LU,442
+Lithuania,LT,440
+Liechtenstein,LI,438
+Libya,LY,434
+Liberia,LR,430
+Latvia,LV,428
+Lesotho,LS,426
+Lebanon,LB,422
+Lao People's Democratic Republic,LA,418
+Kyrgyzstan,KG,417
+Kuwait,KW,414
+Republic of Korea,KR,410
+North Korea,KP,408
+Kenya,KE,404
+Hashemite Kingdom of Jordan,JO,400
+Kazakhstan,KZ,398
+Japan,JP,392
+Jamaica,JM,388
+Ivory Coast,CI,384
+Italy,IT,380
+Israel,IL,376
+Ireland,IE,372
+Iraq,IQ,368
+Islamic Republic of Iran,IR,364
+Indonesia,ID,360
+India,IN,356
+Iceland,IS,352
+Hungary,HU,348
+Hong Kong,HK,344
+Honduras,HN,340
+Vatican City,VA,336
+Haiti,HT,332
+Guyana,GY,328
+Guinea,GN,324
+Guatemala,GT,320
+Guam,GU,316
+Guadeloupe,GP,312
+Grenada,GD,308
+Greenland,GL,304
+Greece,GR,300
+Hellas,GR,300
+Gibraltar,GI,292
+Ghana,GH,288
+Germany,DE,276
+Gambia,GM,270
+Georgia,GE,268
+Gabon,GA,266
+Djibouti,DJ,262
+French Polynesia,PF,258
+French Guiana,GF,254
+France,FR,250
+Aland Islands,AX,248
+Finland,FI,246
+Fiji,FJ,242
+Falkland Islands (Malvinas),FK,238
+Faroe Islands,FO,234
+Estonia,EE,233
+Ethiopia,ET,231
+Equatorial Guinea,GQ,226
+El Salvador,SV,222
+Ecuador,EC,218
+Dominican Republic,DO,214
+Dominica,DM,212
+Denmark,DK,208
+Benin,BJ,204
+Czech Republic,CZ,203
+Cyprus,CY,196
+Cuba,CU,192
+Republic of Croatia,HR,191
+Costa Rica,CR,188
+Democratic Republic of Congo,CD,180
+Congo Brazzaville,CG,178
+Mayotte,YT,175
+Comoros,KM,174
+Colombia,CO,170
+Taiwan,TW,158
+People's Republic of China,CN,156
+Chile,CL,152
+Chad,TD,148
+Sri Lanka,LK,144
+Central African Republic,CF,140
+Cayman Islands,KY,136
+Cape Verde,CV,132
+Canada,CA,124
+Cameroon,CM,120
+Cambodia,KH,116
+Republic of Belarus,BY,112
+Burundi,BI,108
+Myanmar,MM,104
+Bulgaria,BG,100
