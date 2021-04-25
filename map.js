@@ -23,6 +23,9 @@
         .attr("width", width).attr("height", height)
         .attr("fill", "lightblue"); //color the oceans
 
+    const map = svg.append("g")
+        .attr("class", "map")
+
     //// load data
     get_country_geoJSON().then(function(geoJSON) {
         GeoJSONObject = geoJSON;
@@ -31,6 +34,7 @@
             colorScale = d3.scaleLog()
                 .domain([1, d3.max(dataset, function(d) { return d3.max(d.data, function(v) { return v.counts; }); })])
                 .range([0, 1]);
+            drawLegend();
 
             //// bind daterange onchange event
             document.getElementById("dateRange").onchange = function(){
@@ -79,7 +83,7 @@
             .fitSize([width, height], GeoJSONObject);
 
         //plot map of countries
-        svg.append("g")
+        map.append("g")
             .attr("class", "map")
             .selectAll(".country")
             .data(GeoJSONObject.features)
@@ -95,7 +99,7 @@
                 });
 
         //tooltips
-        svg.selectAll("path")
+        map.selectAll("path")
             .on("mousemove", function(event, d) {
                 tooltip.style("display", "block");	
                 const count_data = data.filter(function(v) { return v.country_code == d.country_code; });
@@ -107,6 +111,52 @@
                 tooltip.style("display", "none");	
             });
     }
+
+    function drawLegend() {
+        const tickSize = 6;
+        const legendWidth = 200, legendHeight = 30;
+        let tickAdjust = g => g.selectAll(".tick line").attr("y1",  10 + tickSize - legendHeight);
+    
+        const x = colorScale.copy().rangeRound(d3.quantize(d3.interpolate(0, legendWidth), 2));
+        
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        const x_domain = colorScale.copy().domain([1, 2]);
+        for (let i = 0; i < 256; ++i) {
+            context.fillStyle = d3.interpolateOrRd(x_domain(i / (256 - 1) + 1));
+            context.fillRect(i, 0, 1000, 1000);
+        }
+
+        const legend = svg.append("g")
+            .attr("class", "legend")
+            .attr("transform", "translate(" + (width - legendWidth - 10) + "," + (height - legendHeight - 50) + ")");
+        
+        legend.append("image")
+            .attr("x", 0)
+            .attr("y", 15)
+            .attr("width", legendWidth )
+            .attr("height", legendHeight - 8 )
+            .attr("preserveAspectRatio", "none")
+            .attr("xlink:href", canvas.toDataURL());
+
+        legend.append("g")
+            .attr("transform", "translate(0," + legendHeight + ")")
+            .call(d3.axisBottom(x)
+            .ticks(legendWidth / 64)
+            .tickFormat(d3.format(","))
+            .tickSize(tickSize))
+                .call(tickAdjust)
+                .call(function(g) { return g.select(".domain").remove(); })
+                .append("text")
+                    .attr("x", 0)
+                    .attr("y", 18 - legendHeight - tickSize)
+                    .attr("fill", "black")
+                    .attr("text-anchor", "start")
+                    .style("font-size", "10px")
+                    .attr("class", "title")
+                    .text("Number of tweets with Covid-19 hashtags");
+    }
+
 })();
 
 
